@@ -5,48 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitwarden</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <div id='nav-left'>
-                <div id='logo'>
-                    <div class='image-box'>
-                    <img src="https://raw.githubusercontent.com/bitwarden/brand/master/icons/square-128x128.png"alt="bitwarden-logo">
-                </div><p><strong>bit</strong>warden</p>
-                </div>
-                <!-- <nav>
-                    <a href="#">Products</a>
-                    <a href="#">Downloads</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Help</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
-                </nav>
-            </div>
-            <div>
-                <a href="#"><strong>Get Started</strong></a>
-                <a href="#">Log In <ion-icon name="log-in-outline"></ion-icon></a>
-            </div> -->
+
         </header>
         <main id="sign-up-wrapper">
             <div id="sign-up-info">
-                <h2>Save your passwords.</h2>
-                <h2>Improve your security.</h2>
+                <h2>This is it.</h2>
+                <h2>Stop forgetting passwords from today.</h2>
                 <h2>Access on every device.</h2>
+                <h1 class="large-logo-text">PassPie</h1>
             </div>
-            <form class="sign-up-form">
-                <label for="username">Email Address</label>
-                <input id="username" type="text">
-                <label for="master-password">Master Password</label>
-                <input id="master-password" type="password">
-                <label for="confirm-master-password">Confirm Master Password</label>
-                <input id="confirm-master-password" type="password">
-                <input type="submit" value="Sign Up" id="" class="button">
-            </form>
+            <div>
+                <div class="field is-horizontal">
+                    <div class="field-body">
+                        <div class="field">
+                            <label class="label">First Name</label>
+                            <input class="input" type="text" placeholder="Harry">
+                        </div>
+                        <div class="field">
+                            <label class="label">Last Name</label>
+                            <input class="input" type="text" placeholder="Henderson">
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left">
+                    <input class="input" type="email" placeholder="harry@example.com">
+                    <span class="icon is-medium is-left">
+                        <span class="ion-ionic">
+                            <ion-icon name="mail-outline"></ion-icon></span>
+                        </span>
+                    </div>
+                    <p class="help">You'll use your email to log in to PassPie</p>
+                </div>
+                <div class="field">
+                    <label class="label">Master Password</label>
+                    <p class="control has-icons-left">
+                        <input class="input" type="password" placeholder="Master Password">
+                        <span class="icon is-small is-left">
+                            <span class="ion-ionic">
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                            </span>
+                        </span>
+                    </p>
+                    <p class="help">Make your master password strong but memorable.</p>
+                </div>
+                <div class="field">
+                    <label class="label">Confirm Master Password</label>
+                    <p class="control has-icons-left">
+                      <input class="input" type="password" placeholder="Confirm Master Password">
+                      <span class="icon is-small is-left">
+                        <span class="ion-ionic">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                      </span>
+                    </p>
+                </div>
+            </div>
         </main>
     </div>
 </body>
